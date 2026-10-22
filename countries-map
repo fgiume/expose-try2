@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Map - EXPOSE</title>
+    <link rel="stylesheet" href="styles/map-styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="map-container">
+        <h1>Countries Studied in EXPOSE</h1>
+        <div id="map"></div>
+        <div class="legend">
+            <h3>Legend</h3>
+            <p><span class="color-box studied"></span> Countries with Panel of Experts (Studied)</p>
+            <p><span class="color-box sanctions"></span> Countries with Sanctions but No Panel of Experts</p>
+            <p><span class="color-box none"></span> Countries with No Sanctions</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data/countries-data.js"></script>
+    <script src="scripts/map-script.js"></script>
+</body>
+</html>
